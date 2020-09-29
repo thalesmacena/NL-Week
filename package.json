@@ -1,0 +1,26 @@
+{
+  "name": "next-level-week-proffy",
+  "version": "1.0.0",
+  "description": "Aplicação desenvolvida durante a Next Level Week da [Rocketseat](https://rocketseat.com.br/). Proffy é uma plataforma de agentamento de aulas particulares. Professores se registram e alunos buscam professores. Você pode acessar a páginia deste projeto abrindo o site do [Proffy](https://thalesmacena.github.io/next-level-week-proffy/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thalesmacena/next-level-week-proffy.git"
+  },
+  "keywords": [],
+  "author": "thalesmacena",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thalesmacena/next-level-week-proffy/issues"
+  },
+  "homepage": "https://github.com/thalesmacena/next-level-week-proffy#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
