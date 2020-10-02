@@ -20,10 +20,18 @@ body #page-notfound {
   color: var(--color-title-in-primary);
 }
 
-@media (max-width: 700px){
+@media (max-width: 900px){
+  #page-notfound #container{
+    text-align: center;
+  }
+
   #page-notfound #container #logo-container{
-    padding: 3.2rem;
-    margin-right: 1rem;
+    padding: 1rem;
+    margin-right: 2rem;
     margin-left: 1rem;
   }
+  #page-notfound #container #logo-container img{
+    width: 50%;
+  }
+}
 }
