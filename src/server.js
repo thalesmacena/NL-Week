@@ -12,5 +12,8 @@ server.use(express.static("public"))
 .get("/give-classes", (req,res) => {
   return res.sendFile(__dirname + "/views/give-classes.html")
 })
+.use((req, res) => {
+  res.status(404).sendFile(__dirname + "/views/not-found.html")
+})
 
 .listen(5500)

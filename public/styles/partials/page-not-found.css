@@ -1,0 +1,12 @@
+#page-not-found{
+  background: var(--color-primary);
+}
+
+#page-not-found #container {
+  color: var(--color-text-in-primary);
+  text-align: center;
+  margin: 3.2rem;
+  width: 100vw;
+  height: 100vh;
+}
+
