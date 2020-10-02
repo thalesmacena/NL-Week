@@ -1,0 +1,37 @@
+body #page-notfound {
+  background-color: var(--color-background);
+}
+
+#page-notfound #container{
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#page-notfound #container #logo-container{
+  position: relative;
+  top: 22%;
+  border-radius: 1.2rem;
+  padding: 10rem;
+  background-color: var(--color-primary);
+}
+
+#page-notfound #container h1{
+  color: var(--color-title-in-primary);
+}
+
+
+@media (max-width: 900px){
+  #page-notfound #container{
+    text-align: center;
+  }
+
+  #page-notfound #container #logo-container{
+    padding: 1rem;
+    margin-right: 2rem;
+    margin-left: 1rem;
+  }
+  #page-notfound #container #logo-container img{
+    width: 50%;
+  }
+}
