@@ -45,7 +45,8 @@ function pageStudy(req, res){
 }
 
 function pageGiveClasses(req, res){
-  return res.render("give-classes.html")
+  const filters = req.query
+  return res.render("give-classes.html", {filters, subjects, weekdays})
 }
 
 function pageError(req,res){
