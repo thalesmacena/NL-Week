@@ -1,6 +1,3 @@
-const express = require('express')
-const server = express()
-
 const proffys = [
   { name: "Thales Monteiro",
     avatar: "https://avatars1.githubusercontent.com/u/20719947?s=460&u=af34a508140033bbad586c34d8bfa3745b194fe2&v=4", 
@@ -15,23 +12,35 @@ const proffys = [
 ]
 
 function pageLanding(req, res){
-  return res.sendFile(__dirname + "/views/index.html")
+  return res.render("index.html")
 }
 
 function pageStudy(req, res){
-  return res.sendFile(__dirname + "/views/study.html")
+  return res.render("study.html", {proffys})
 }
 
 function pageGiveClasses(req, res){
-  return res.sendFile(__dirname + "/views/give-classes.html")
+  return res.render("give-classes.html")
 }
 
 function pageError(req,res){
-  res.status(404).sendFile(__dirname + "/views/not-found.html")
+  res.status(404).render("not-found.html", {title: "Não foi possivel encontrar a página "+ req.url})
 }
 
+const express = require('express')
+const server = express()
 
-server.use(express.static("public"))
+// nunjucks config
+const nunjucks = require('nunjucks')
+nunjucks.configure('src/views', {
+  express: server,
+  noCache: true
+})
+
+server
+// static files config
+.use(express.static("public"))
+// application routes config
 .get("/", pageLanding)
 .get("/study/", pageStudy)
 .get("/give-classes", pageGiveClasses)
