@@ -45,8 +45,13 @@ function pageStudy(req, res){
 }
 
 function pageGiveClasses(req, res){
-  const filters = req.query
-  return res.render("give-classes.html", {filters, subjects, weekdays})
+  const data = req.query
+  if (Object.keys(data).length > 0){
+    proffys.push(data)
+    return res.redirect("/study")
+  } 
+
+  return res.render("give-classes.html", {subjects, weekdays})
 }
 
 function pageError(req,res){
