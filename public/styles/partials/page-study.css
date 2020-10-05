@@ -28,7 +28,7 @@
   align-items: center;
   justify-content: center;
   transition: background 0.2s;
-  margin-top: 3.2rem;
+  margin-top: 2.4rem;
 }
 #search-teachers button:hover {
   background-color: var(--color-secondary-dark);
@@ -103,7 +103,7 @@
   display: block;
 }
 
-.teacher-item button{
+.teacher-item footer .button{
   width: 20rem;
   height: 5.6rem;
   background: var(--color-secondary);
@@ -123,7 +123,7 @@
   margin-left: 1.6rem;
 }
 
-.teacher-item button:hover{
+.teacher-item footer .button:hover{
   background: var(--color-secondary-dark);
 }
 
@@ -187,13 +187,13 @@
     margin-left: 16px;
   }
 
-  .teacher-item footer button{
+  .teacher-item footer .button{
     width: 245px;
     font-size: 16px;
     justify-content: center;
   }
 
-  .teacher-item footer button img{
+  .teacher-item footer .button img{
     margin-right: 16px;
   }
 }
