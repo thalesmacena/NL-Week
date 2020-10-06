@@ -12,7 +12,7 @@ function execute(db) {
     );
 
     CREATE TABLE IF NOT EXISTS classes (
-      id INTEGER PRIMARY KEY AUTOINCLEMENT,
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
       subject TEXT,
       cost TEXT,
       proffy_id INTEGER
