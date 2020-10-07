@@ -1,7 +1,26 @@
 # Proffy
 
-Application developed during [Rocketseat](https://rocketseat.com.br/) Next Level Week. Proffy is a private tutoring platform. Teachers register and students seek teachers. You can access this project's page by opening the [Proffy website](https://thalesmacena.github.io/next-level-week-proffy/).
+Application developed during [Rocketseat](https://rocketseat.com.br/) Next Level Week. The classes were taught by the teacher [maik britto](https://github.com/maykbrito).
 
-## Dev Branch
+Proffy is a tutoring platform. Teachers register and tell the classes and times they want to teach. Students can search for teachers by selected subjects and schedules.
 
-In the development branch you can find the updated project using node.js
+# Static Project
+
+You can find the static design of the pages, an example of what it would look like, in Master Branch without all its functionality. By accessing [Proffy website](https://thalesmacena.github.io/next-level-week-proffy/), its Github pages link. You can also find a [Error page](https://thalesmacena.github.io/next-level-week-proffy/not-found.html), if the server responded with a http 404 error. 
+
+## Dynamic Project
+
+In the development branch you can find the updated project using [node.js](https://nodejs.org/en/). This project uses the [nunjucks](https://mozilla.github.io/nunjucks/) template engine, the [asynchronous sqlite](https://www.npmjs.com/package/sqlite-async) database.
+
+### Run the Project
+to run the project first download or copy all the files from the dev branch to your chosen local directory. Then use your package manager's run command:
+
+**With NPM:**
+```Bash
+npm run dev
+```
+
+**With Yarn:**
+```Bash
+yarn run dev
+```
