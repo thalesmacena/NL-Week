@@ -10,23 +10,22 @@ Database.then(async (db) => {
   }
 
   classValue = {
-    subject: "Ciência da Computação", 
+    subject: "1", 
     cost: "20,00"
   }
 
   classScheduleValues = [
     {
-      weekday: 1, 
+      weekday: 0, 
       time_from: 720, 
       time_to: 1220
     },
     {
-      weekday: 6, 
+      weekday: 1, 
       time_from: 520, 
       time_to: 1220
     }
   ]
 
   await createProffy(db, {proffyValue,classValue,classScheduleValues})
-
 })

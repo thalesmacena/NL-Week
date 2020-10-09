@@ -61,7 +61,14 @@
     
     <main>
       
+      {% if proffys == ""%}
+        
+        <p class="no-results">Nenhum professor encontrado com a sua pesquisa</p>
+      
+      {%else%}
+
       {%for proffy in proffys %}
+
         <article class="teacher-item">
          <header>
             <img src="{{proffy.avatar}}" alt="{{proffy.name}}">
@@ -78,9 +85,10 @@
             <a href="https://api.whatsapp.com/send?l=pt_BR&phone=55{{proffy.whatsapp}}&text=Tenho interesse na sua aula de {{proffy.subject}}, {{proffy.name}}" class="button" target="_blank">
             <img src="/images/icons/whatsapp.svg" alt="whatsapp">Entrar em contato</img></a>
          </footer>
-      </article>
+        </article>
       {%endfor%}
-
+      
+      {%endif%}
     </main>
 
 </body>
