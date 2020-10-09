@@ -27,3 +27,5 @@ npm run dev
 ```Bash
 yarn run dev
 ```
+
+**The server is listening on port 5500, so to access, just go to 127.0.0.1:5500 or localhost:5500**
